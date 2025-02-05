@@ -4,7 +4,7 @@ import routes from "./routes";
 const router = createRouter({
   hashbang: false,
   mode: "history",
-  history: createWebHistory("/webComponents"),
+  history: createWebHistory("/webCodefish"),
   // base: "/webComponents",
   routes,
 });
