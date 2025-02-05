@@ -5,7 +5,6 @@ const router = createRouter({
   hashbang: false,
   mode: "history",
   history: createWebHistory("/webCodefish"),
-  // base: "/webComponents",
   routes,
 });
 
