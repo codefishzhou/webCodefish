@@ -13,10 +13,10 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    base: '/webComponents/',
+    base: '/webCodefish/',
   },
   output: {
-    assetPrefix: '/webComponents/',
+    assetPrefix: '/webCodefish/',
     filenameHash: true,
   } as any,
   tools: {
