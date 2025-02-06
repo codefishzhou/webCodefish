@@ -6,6 +6,13 @@ const routes = [
     path: "/",
     name: "index",
     component: () => import("@/views/Index.vue"),
+    children: [
+      {
+        path: "/",
+        name: "dashboard",
+        component: () => import("@/views/Dashboard.vue"),
+      },
+    ],
   },
   {
     path: "/bigData",

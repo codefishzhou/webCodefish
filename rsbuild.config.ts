@@ -25,7 +25,6 @@ export default defineConfig({
       config.resolve ||= {};
       config.resolve.alias ||= {};
       config.output ||= {};
-      // public
       config.resolve.alias["@"] = path.resolve(__dirname, "src");
       appendPlugins([
         // new ModuleFederationPlugin({

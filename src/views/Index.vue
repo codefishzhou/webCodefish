@@ -29,8 +29,5 @@ export default {
 </script>
 
 <template>
-  <p> Hi There, this is consumer app. I'm loading userData from remote : {{ userData }}</p>
-  <!-- <AppIndex>
-    <router-view />
-  </AppIndex> -->
+  <router-view />
 </template>
