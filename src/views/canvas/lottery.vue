@@ -1,6 +1,6 @@
 <template>
     <div>
-        <canvas id="myCanvas" ref="canvas" width="400" height="400"></canvas>
+        <canvas id="myCanvas" ref="canvas" width="400" height="400" class="rotate-90"></canvas>
     </div>
 </template>
 
@@ -25,9 +25,9 @@ const initCanvas = (count, [x, y]) => {
     
     // 加载图片
     const img = new Image();
-    img.src = '/path/to/your/image.png';  // 替换为你的图片路径
+    img.src = 'https://avatars.githubusercontent.com/u/91311533?s=400&u=d28ebc4b677d3b5a7c354d73ca100d910a398084&v=4';  // 替换为你的图片路径
     
-    img.onload = () => {
+    img.onload = () => { 
         for (let i = 0; i < sectorCount; i++) {
             const startAngle = i * anglePerSector;
             const endAngle = startAngle + anglePerSector;
@@ -56,11 +56,16 @@ const initCanvas = (count, [x, y]) => {
             ctx.value.fillText(texts[i], 0, 0);
             ctx.value.restore();
             
+
+            // ctx.value.save();
+            // ctx.value.beginPath();
+            // ctx.value.arc(x, y, innerRadius, startAngle, endAngle, false);
+            // ctx.value.clip();
             // 绘制图片（在内圈）
             ctx.value.save();
             const imgSize = 30;  // 图片大小
-            const imgX = x + (innerRadius * 0.7) * Math.cos(middleAngle) - imgSize/2;
-            const imgY = y + (innerRadius * 0.7) * Math.sin(middleAngle) - imgSize/2;
+            const imgX = x + (innerRadius * 0.8) * Math.cos(middleAngle) - imgSize/2;
+            const imgY = y + (innerRadius * 0.8) * Math.sin(middleAngle) - imgSize/2;
             
             // 创建圆形裁剪区域
             ctx.value.beginPath();
@@ -74,6 +79,6 @@ const initCanvas = (count, [x, y]) => {
 }
 
 onMounted(() => { 
-    initCanvas(7, [0, 0]);
+    initCanvas(8, [0, 0]);
 })
 </script>
