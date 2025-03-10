@@ -5,12 +5,17 @@ const routes = [
   {
     path: "/",
     name: "index",
-    component: () => import("@/views/Index.vue"),
+    component: () => import("@/components/layout/index.vue"),
     children: [
       {
-        path: "/",
+        path: "dashboard",
         name: "dashboard",
         component: () => import("@/views/Dashboard.vue"),
+      },
+      {
+        path: "canvasLottery",
+        name: "canvasLottery",
+        component: () => import("@/views/canvas/lottery.vue"),
       },
     ],
   },
