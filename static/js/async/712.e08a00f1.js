@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrsbuild_vue_consumer=self.webpackChunkrsbuild_vue_consumer||[]).push([["712"],{817:function(e,u,t){t.r(u),t.d(u,{default:()=>r});var n=t("595");let r=(0,t("744").default)({name:"LayoutIndex",setup(){},computed:{},mounted(){}},[["render",function(e,u,t,r,s,d){let c=(0,n.up)("router-view");return(0,n.wg)(),(0,n.j4)(c)}]])}}]);
