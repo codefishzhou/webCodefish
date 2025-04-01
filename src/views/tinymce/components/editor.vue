@@ -10,7 +10,7 @@
     </div>
   </template>
   <script setup lang="ts">
-  import { ref, onMounted } from 'vue'
+  import { ref, onMounted, watch } from 'vue'
   import tinymce from 'tinymce/tinymce'
   // 使用该方法需要引入下面的数据
   import 'tinymce/models/dom' // 特别注意 tinymce 6.0.0 版本之后必须引入，否则不显示
