@@ -23,7 +23,9 @@
   import 'tinymce/plugins/table'
   import 'tinymce/plugins/lists'
   import 'tinymce/plugins/wordcount'
-  
+  import '../plugins/setBackground'
+  // import '../plugins/quickbars'
+
   // 引入富文本编辑器主题的js和css
   import 'tinymce/themes/silver/theme.min.js'
   import 'tinymce/skins/ui/oxide/skin.min.css'
@@ -38,12 +40,13 @@
     object_resizing: false,
     image_description: false,
     image_dimensions: false, // 禁止操作图片
-    plugins: 'link lists image code table wordcount', // 富文本插件
+    plugins: 'link lists image code table wordcount useBackgroundColor', // 富文本插件
     font_size_formats: '8px 10px 12px 14px 16px 18px 24px 36px 48px 128px',
     font_family_formats:
       '微软雅黑=Microsoft YaHei,Helvetica Neue,PingFang SC,sans-serif;苹果苹方=PingFang SC,Microsoft YaHei,sans-serif;宋体=simsun,serif',
-    toolbar:
-      'undo redo fontfamily fontsize fontname bold italic underline strikethrough | fontsizeselect | forecolor | alignleft aligncenter alignright',
+    toolbar: 
+      'colorBlock undo redo fontfamily fontsize fontname bold italic underline strikethrough | fontsizeselect | forecolor | alignleft aligncenter alignright',
+    contextmenu: 'editColorBlock',
     branding: false, // //是否禁用“Powered by TinyMCE”
     menubar: false, //顶部菜单栏显示
     paste_data_images: false, // 禁止粘贴图片
