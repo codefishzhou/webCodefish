@@ -11,6 +11,9 @@ importers:
       '@rsbuild/plugin-sass':
         specifier: ^1.2.0
         version: 1.2.0(@rsbuild/core@1.1.2)
+      tinymce:
+        specifier: ^6.3.2
+        version: 6.3.2
       vue:
         specifier: 3.4.31
         version: 3.4.31(typescript@5.5.3)
@@ -1463,6 +1466,9 @@ packages:
 
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
+
+  tinymce@6.3.2:
+    resolution: {integrity: sha512-nOVHk4FhHKQj48hi7fEptS1Se6CNzPtfIcDzTO70KoTcSiQIFzhhZjS5bPotSzFnQ4dIQJ4QPOd7sqNs6fXUrA==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -3062,6 +3068,8 @@ snapshots:
   thenify@3.3.1:
     dependencies:
       any-promise: 1.3.0
+
+  tinymce@6.3.2: {}
 
   to-regex-range@5.0.1:
     dependencies:

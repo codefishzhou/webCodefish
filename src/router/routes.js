@@ -12,11 +12,16 @@ const routes = [
         name: "dashboard",
         component: () => import("@/views/dashboard.vue"),
       },
-      {
+    {
         path: "canvasLottery",
         name: "canvasLottery",
         component: () => import("@/views/canvas/lottery.vue"),
       },
+      {
+        path: 'tinymce',
+        name: 'tinymce',
+        component: () => import('@/views/tinymce/index.vue')
+      }
     ],
   },
   {
